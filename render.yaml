@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: dream-website
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python app.py"
