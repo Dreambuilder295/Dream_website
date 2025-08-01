@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Your custom stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        .navbar {
+            background-color: #000000;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .navbar a {
+            color: #00ffe1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/quotes">Quotes</a>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+        <p>© 2025 Dream Website by Sumeet | Made with 💙 & Python</p>
+        <p>"Let your code be kind. Let your work be light."</p>
+    </footer>
+</body>
+</html>
