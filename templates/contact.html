@@ -4,16 +4,17 @@
 
 {% block content %}
     <div class="container">
-        <h1>Contact Me</h1>
+        <h1>Contact</h1>
+        <p>If you'd like to add a contact form to your website, this page is ready to collect user input and send it to your backend or email handler.</p>
 
         <form method="POST" action="/contact">
-            <label for="name">Your Name:</label><br>
+            <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
 
-            <label for="email">Your Email:</label><br>
+            <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br><br>
 
-            <label for="message">Your Message:</label><br>
+            <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
             <button type="submit" class="button">Send Message</button>

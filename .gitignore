@@ -1,0 +1,25 @@
+# 🚫 Ignore system and personal files
+AppData/
+Thumbs.db
+*.log
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.DS_Store
+*.sqlite3
+
+# 🚫 Ignore VS Code and other IDE files
+.vscode/
+*.code-workspace
+
+# 🚫 Ignore virtual environment
+venv/
+
+# 🚫 Ignore deployment files (optional)
+.env
+.env.*
+
+# 🚫 Ignore backups or temp files
+*.bak
+*.swp
